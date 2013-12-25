@@ -28,8 +28,8 @@ test('first day of march 2013 should be february 24th', function() {
 
     var firstDay = month.weeks[0][0];
 
-    equal(firstDay.date.date(), 24);
-    equal(firstDay.date.month(), 1);
+    equal(firstDay.date.getDate(), 24);
+    equal(firstDay.date.getMonth(), 1);
 });
 
 test('last day of march 2013 should be april 6th', function() {
@@ -37,6 +37,6 @@ test('last day of march 2013 should be april 6th', function() {
 
     var firstDay = month.weeks[5][6];
 
-    equal(firstDay.date.date(), 6);
-    equal(firstDay.date.month(), 3);
+    equal(firstDay.date.getDate(), 6);
+    equal(firstDay.date.getMonth(), 3);
 });

@@ -15,7 +15,7 @@ function Month(month, year) {
         return _.range(DAYS_IN_WEEK).map(function(dayIndex) {
 
             var dayOffset = (weekIndex * DAYS_IN_WEEK) + dayIndex
-            return new Calendar.Day(firstDayInMonthCalendar.clone().add('day', dayOffset));
+            return new Calendar.Day(firstDayInMonthCalendar.clone().add('day', dayOffset).toDate());
 
         });
 

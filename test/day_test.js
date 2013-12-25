@@ -3,7 +3,7 @@ module('Calendar.Day');
 test('should accept moment object', function() {
     var day = new Calendar.Day(moment([2013, 2, 1]));
 
-    equal(day.date.format('MM/DD/YYYY'), '03/01/2013');
+    equal(moment(day.date).format('MM/DD/YYYY'), '03/01/2013');
 });
 
 test('should have data object', function() {
